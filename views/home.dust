@@ -1,0 +1,26 @@
+{>base/}
+
+
+{<header}
+	<header class="jumbotron">
+		<h3>Template: {templateName}</h3>
+	</header>
+{/header}
+
+
+{<content}
+
+	{#feeds}
+		<div class="hero-unit" style="padding-top: 10px;">
+			<h3 style="text-align:center">{name}</h3>
+			
+			<ul>
+				{#articles feed_slug=slug}
+					<li><a target="_blank" href="article/{templateSlug}/{feed_slug}/{slug}">{title}</a></li>
+				{/articles}
+			</ul>
+		</div>
+	{/feeds}
+
+{/content}
+

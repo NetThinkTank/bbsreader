@@ -1,0 +1,64 @@
+.black {
+	color: rgb(0, 0, 0);
+}
+
+.dark-red {
+	color: rgb(128, 0, 0);
+}
+
+.dark-green {
+	color: rgb(0, 128, 0);
+}
+
+.dark-yellow {
+	color: rgb(128, 128, 0);
+}
+
+.dark-blue {
+	color: rgb(0, 0, 128);
+}
+
+.dark-magenta {
+	color: rgb(128, 0, 128);
+}
+
+.dark-cyan {
+	color: rgb(0, 128, 128);
+}
+
+.gray {
+	color: rgb(192, 192, 192);
+}
+
+.dark-gray {
+	color: rgb(128. 128, 128);
+}
+
+.bright-red {
+	color: rgb(255, 0, 0);
+}
+
+.bright-green {
+	color: rgb(0, 255, 0);
+}
+
+.bright-yellow {
+	color: rgb(255, 255, 0);
+}
+
+.bright-blue {
+	color: rgb(0, 0, 255);
+}
+
+.bright-magenta {
+	color: rgb(255, 0, 255);
+}
+
+.bright-cyan {
+	color: rgb(0, 255, 255);
+}
+
+.white {
+	color: rgb(255, 255, 255);
+}
+

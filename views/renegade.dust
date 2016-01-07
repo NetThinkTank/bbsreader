@@ -1,0 +1,108 @@
+{>base/}
+
+
+{<extra_css}
+	<link href="/css/ansi.css" rel="stylesheet">
+	
+	<style>
+		.hero-unit { font-size: 12px; line-height: 1.5; }
+		.hero-unit p { font-size: 12px; line-height: 1.5; }
+	</style>
+{/extra_css}
+
+
+{<header}
+	<header class="jumbotron">
+		<h3>Template: {template.name}</h3>
+	</header>
+{/header}
+
+
+{<content}
+
+	<div class="hero-unit" style="padding-top: 10px; background: black;">
+		<div class="container" style="width:100%">
+			<tt>
+				<div class="row">
+					<div class="span3">
+						<span class="dark-cyan">Date:&nbsp;</span>
+						<span class="bright-green">{publishedDate|s}</span>
+						<br/>
+						<span class="dark-cyan">From:&nbsp;</span>
+						<span class="bright-yellow">{article.creator}</span>
+						<br/>
+						<span class="dark-cyan">To&nbsp;&nbsp;:&nbsp;</span>
+						<span class="bright-yellow">n/a</span>
+						<br/>
+						<span class="dark-cyan">Subj:&nbsp;</span>
+						<span class="bright-yellow">{article.title}</span>
+						<br/>
+						<span class="dark-cyan">Stat:&nbsp;</span>
+						<span class="bright-yellow">Sent</span>
+					</div>
+					<div class="span3">
+						<span class="bright-green">Number&nbsp;:&nbsp;</span>
+						<span class="bright-green">{article.number}&nbsp</span>
+						<span class="dark-cyan">of&nbsp;</span>
+						<span class="bright-green">{numArticles}</span>
+						<br/>
+						<span class="dark-cyan">Area&nbsp;&nbsp;&nbsp;:&nbsp;</span>
+						<span class="bright-green">RSS:&nbsp</span>
+						<span class="white">{feed.name}</span>
+						<br/>
+						<span class="dark-cyan">Refer #:&nbsp;</span>
+						<span class="bright-yellow">n/a</span>
+						<br/>
+						<span class="dark-cyan">Replies:&nbsp;</span>
+						<span class="bright-yellow">n/a</span>
+						<br/>
+						<span class="dark-cyan">Origin&nbsp;:&nbsp;</span>
+						<span class="bright-yellow">n/a</span>						
+					</div>
+				</div>
+				
+				<br/>
+				
+				<div class="row">
+					<div class="span6">
+						<span class="dark-cyan">{article.content|s}</span>
+					</div>
+				</div>
+				
+				<br/>
+				
+				<div class="row">
+					<div class="span6">
+						<span class="bright-green">--- Renegade BBSreader</span>
+						<br/>
+						<span class="bright-yellow">
+							&nbsp;*&nbsp;Origin:&nbsp;
+							<a class="bright-yellow" href="{article.link|s}">{article.link|s}</a>
+						</span>
+					</div>
+				</div>				
+				
+				<br>
+				
+				<div class="row">
+					<div class="span6">
+						<span class="dark-red">[</span>
+						<span class="bright-red">Node 0</span>
+						<span class="dark-red">]&nbsp;</span>
+						<span class="dark-green">[</span>
+						<span class="bright-green">{nowDate}</span>
+						<span class="dark-green">]&nbsp;</span>
+						<span class="dark-blue">[</span>
+						<span class="bright-blue">{article.number} of {numArticles}</span>
+						<span class="dark-blue">]</span>
+					</div>
+				</div>						
+				
+			</tt>
+		</div>
+	</div>
+	
+	<br/>
+
+{/content}
+

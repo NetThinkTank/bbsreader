@@ -1,0 +1,20 @@
+{>base/}
+
+
+{<nav}
+{/nav}
+
+
+{<header}
+{/header}
+
+
+{<content}
+		<br/><br/><br/>
+
+		<div class="hero-unit" style="padding-top: 10px;">
+			ERROR
+		</div>
+
+{/content}
+
